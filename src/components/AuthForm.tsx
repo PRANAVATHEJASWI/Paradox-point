@@ -96,9 +96,14 @@ if (isLogin) {
   setAge('');
 }
 
-  } catch (err: any) {
+} catch (err) {
+  if (err instanceof Error) {
     setError(err.message);
+  } else {
+    setError("An unexpected error occurred.");
   }
+}
+
 };
 
   return (
