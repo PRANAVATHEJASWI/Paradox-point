@@ -1,0 +1,74 @@
+.navbar {
+  width: 100vw;              /* Full viewport width */
+  max-width: 100%;           /* Prevent overflow */
+  margin: 0;                 /* Remove gap */
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0e1629;
+  color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.search-bar {
+  background-color: #1a2336;
+  border: none;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 16px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-item {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.login-btn,
+.logout-btn {
+  background-color: white;
+  color: black;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.user-icon {
+  font-size: 18px;
+}

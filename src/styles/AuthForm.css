@@ -1,0 +1,181 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f52ba, #3c9dd6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card */
+.form-box {
+  width: 380px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 10px;
+  font-weight: 500;
+  border: none;
+  background: #eee;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.toggle-buttons button.active {
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  color: white;
+  border-radius: 25px;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border 0.2s ease;
+}
+
+form input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+/* Forgot link */
+.forgot {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.forgot a {
+  font-size: 0.9em;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* Switch text */
+.switch {
+  margin-top: 20px;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.switch span {
+  color: #1976d2;
+  cursor: pointer;
+  font-weight: 500;
+}
+/* Toggle wrapper */
+.toggle-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 30px;
+  background: #eee;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+/* Toggle buttons */
+.toggle-btn {
+  flex: 1;
+  z-index: 1;
+  padding: 10px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.toggle-btn.active {
+  color: white;
+}
+
+/* Animated slider */
+.slider {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  transition: left 0.3s ease;
+}
+
+.slider.right {
+  left: 50%;
+}
+
+.error {
+  margin-top: 15px;
+  color: red;
+  font-size: 0.95em;
+}
+
+.success {
+  margin-top: 15px;
+  color: green;
+  font-size: 0.95em;
+}
+

@@ -1,0 +1,86 @@
+.dashboard-container {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f7fb;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #0c0c1e;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-items button {
+  padding: 8px 16px;
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cards-section {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.gray {
+  color: gray;
+}
+
+.chart-placeholder {
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 6px;
+  background: #ddd;
+  animation: flicker 2s infinite alternate;
+}
+
+.red-line { background: linear-gradient(to right, #f87171, #f43f5e); }
+.green-line { background: linear-gradient(to right, #4ade80, #22c55e); }
+.gray-line { background: linear-gradient(to right, #d1d5db, #9ca3af); }
+
+@keyframes flicker {
+  0% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
